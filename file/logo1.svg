@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" width="500" height="500" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <path style="fill: rgb(255, 146, 235); pointer-events: none;" d="M 342.444 193.198 H 410.513 V 450.079 A 17.241 17.241 0 0 1 393.272 467.32 H 359.685 A 17.241 17.241 0 0 1 342.444 450.079 V 193.198 Z" bx:shape="rect 342.444 193.198 68.069 274.122 0 0 17.241 17.241 1@af101db7"/>
+  <ellipse style="fill: rgb(255, 146, 235); pointer-events: none;" cx="249.999" cy="193.192" rx="160.512" ry="160.512"/>
+  <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 55.9px; font-weight: 700; white-space: pre;" transform="matrix(1.083338, 0, 0, 1.083338, 196.690113, 62.728815)"><tspan x="138.202" y="191.94"><tspan x="138.20199584960938" dy="1em">​</tspan>ュ</tspan><tspan x="138.20199584960938" dy="1em">​</tspan><tspan>カ<tspan x="138.20199584960938" dy="1em">​</tspan>イ</tspan></text>
+  <text style="fill: rgb(255, 255, 255); font-family: Arial, sans-serif; font-size: 60.6px; font-weight: 700; white-space: pre;" x="346.4" y="287.862">キ</text>
+</svg>
