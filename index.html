@@ -1,27 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Quckixy Dev</title>
+        <title>Qukai キュカイ | A Minecraft 1.16.5 client</title>
         <link rel="shortcut icon" type="image/x=icon" href="icon.png" />
-        <meta name="description" content="Quckixy Dev site" />
-        <meta name="keywords" content="quckixy" />
+        <meta name="description" content="Qukai - pvp and hack client" />
+        <meta name="keywords" content="qukai, quckixy, quckixydev, java, minecraft, mcp, forge, fabric, 1.8.9, client" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <link rel="stylesheet" href="main.css" />
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1222003422446479" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@200;400&display=swap" />
     </head>
     <body>
-        <p><canvas></canvas></p>
-        <script src="rymb.js" id="rendered-js"></script>
-        <h1 class="text1" style="font-weight: 800;text-align: center;">
-            quckixy.xyz
-        </h1>
-        <div class="btn-group" style="position: fixed; top: 50%;left: 50%; transform: translate(-50%, 0);">
-            <a href="https://discord.com/invite/xdHXEupjkM" style="">Discord</a>
-            <a href="https://github.com/Quckixy" style="">GitHub</a>
-            <a href="projects" style="">Projects</a>
-        </div>
+        <main>
+            <script src="videoPlayer.js"></script>
+            <input type="checkbox" autocomplete="off" id="overlay-toggle" />
+            <div class="overlay fullscreen">
+                <label for="overlay-toggle" onclick="videoPlay()">
+                    <span class="no-hover" style="font-family: 'Arial'; font-size: 0.6em">tap to enter</span>
+                    <span class="hover" style="font-family: 'Arial'; font-size: 0.6em">click to enter</span>
+                </label>
+            </div>
+            <video loop playsinline preload="auto" class="bg-video" id="video">
+                <source src="https://cdn.glitch.me/00fef02b-ad55-4fea-b75a-0db8e0263d1e/video.mp4?v=1649619470845" type="video/mp4" />
+            </video>
+            <header class="page-header" role="banner">
+                <h1 class="project-name">Qukai</h1>
+                <h2 class="project-tagline">A Minecraft 1.16.5 client</h2>
+                <a href="/discord" class="btn">Join Discord!</a>
+                <a href="https://github.com/quckixy/qukai" class="btn">View on GitHub</a>
+                <a href="/download" class="btn">Download</a>
+            </header>
+        </main>
     </body>
+    <footer>
+        <h4 style="
+            font-family: 'Arial';
+            color: white;
+            position: fixed;
+            bottom: 5px;
+            text-shadow: 0 0 0.4em #1f1e1c;">
+            © 2022 Quckixy Dev
+        </h4>
+    </footer>
 </html>
-
