@@ -11,7 +11,6 @@
     </head>
     <body>
         <main>
-            <script src="videoPlayer.js"></script>
             <input type="checkbox" autocomplete="off" id="overlay-toggle" />
             <div class="overlay fullscreen">
                 <label for="overlay-toggle" onclick="videoPlay()">
@@ -19,9 +18,11 @@
                     <span class="hover" style="font-family: 'Arial'; font-size: 0.6em">click to enter</span>
                 </label>
             </div>
-            <div class="bg-video" id="video">
-                <source src="https://www.youtube.com/embed/zMsqWNzPpeU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=zMsqWNzPpeU&start=0&rel=0" type="video/mp4" />
-            </video>
+            <div class="video-background">
+                <div class="video-foreground">
+                    <iframe src="https://www.youtube.com/embed/zMsqWNzPpeU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=zMsqWNzPpeU&start=0&rel=0"" allowfullscreen></iframe>
+                </div>
+            </div>
             <header class="page-header" role="banner">
                 <h1 class="project-name">Qukai</h1>
                 <h2 class="project-tagline">A Minecraft 1.16.5 client</h2>
