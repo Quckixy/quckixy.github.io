@@ -14,10 +14,6 @@ body {
 html {
   scroll-behavior: smooth;
 }
-*::after,
-* {
-  box-sizing: inherit;
-}
 [class~="hover"] {
   display: none;
 }
