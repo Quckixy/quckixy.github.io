@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Nami ナミ - Fabric Utility Mod</title>
+        
+        <link rel="apple-touch-icon-precomposed" sizes="57x57" href="resources/icons/apple-touch-icon-57x57.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="resources/icons/apple-touch-icon-114x114.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="resources/icons/apple-touch-icon-72x72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="resources/icons/apple-touch-icon-144x144.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="resources/icons/apple-touch-icon-60x60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="resources/icons/apple-touch-icon-120x120.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="resources/icons/apple-touch-icon-76x76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="resources/icons/apple-touch-icon-152x152.png" />
+        <link rel="icon" type="image/png" href="resources/icons/favicon-196x196.png" sizes="196x196" />
+        <link rel="icon" type="image/png" href="resources/icons/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/png" href="resources/icons/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="resources/icons/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="resources/icons/favicon-128.png" sizes="128x128" />
+        <meta name="application-name" content="&nbsp;"/>
+        <meta name="msapplication-TileColor" content="#FFFFFF" />
+        <meta name="msapplication-TileImage" content="resources/icons/mstile-144x144.png" />
+        <meta name="msapplication-square70x70logo" content="resources/icons/mstile-70x70.png" />
+        <meta name="msapplication-square150x150logo" content="resources/icons/mstile-150x150.png" />
+        <meta name="msapplication-wide310x150logo" content="resources/icons/mstile-310x150.png" />
+        <meta name="msapplication-square310x310logo" content="resources/icons/mstile-310x310.png" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@200;400&amp;display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" referrerpolicy="no-referrer" crossorigin="anonymous">
+        <style>
+            body {
+                background-color: #917bcc;
+            }
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            ::-webkit-scrollbar-track {
+              	background: rgba(0,0,0,0.11);
+            }
+            ::-webkit-scrollbar-thumb {
+            	background: #ffffff3f;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+              	background: #ffffff6b;
+            }
+            
+            .title {
+                text-align: center;
+                font-family: 'Quicksand';
+                color: rgb(255, 255, 255);
+                place-items: center;
+                text-shadow: 0 0 0.4em #1f1e1c;
+            }
+
+            .btn1 {
+                color: white;
+                background-color: #0000005b;
+                padding-left: 0.9375pc;
+                padding-bottom: 0.9375pc;
+                padding-right: 0.9375pc;
+                padding-top: 0.9375pc;
+                border-radius: 10px;
+                transition: 0.4s;
+                font-size: 1.3rem;
+                font-weight: 500;
+                text-decoration: none;
+                font-family: 'Arial';
+                text-shadow: 0 0 0.4em #1f1e1c;
+                margin: 2px;
+            }
+            .btn1:hover {
+                transition: 0.5s;
+                background-color: #00000025;
+            }
+            .fa-eye {
+                content:"\f06e";
+                font-family: "Font Awesome 6 Free";
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="title">
+                <h1 style="margin-top: 250px;">
+                    Nami 
+                </h1>
+                <h2 style="margin-top: -20px;">
+                    The best utility for minecraft 1.16.5! <br>
+                    We have bots with proxy and captcha bypass, <br>
+                    advanced settings for each module, <br>
+                    a lot of pvp and render modules, <br>
+                    our own cape system, <br>
+                    and a lot of beautiful guis.
+                </h1>
+                <h4 id="views" style="margin-top: -15px;"><i class="fas fa-eye"></i></h4>
+                <a id="download" href="https://github.com/Quckixy/Nami-Releases/releases/download/test/32x32.png" class="btn1">
+                    Download
+                </a>
+                <a href="discord.html" class="btn1">
+                    Discord
+                </a>
+                <a href="https://github.com/Quckixy" class="btn1">
+                    GitHub
+                </a>
+                <a href="https://www.youtube.com/channel/UCttkKs6jnV2Hf53Nk-X2PEg" class="btn1">
+                    YouTube
+                </a>
+            </div>
+        </main>
+        <footer>
+            <h3 style="
+                font-family: 'Arial';
+                color: white;
+                position: fixed;
+                bottom: -14px;
+                text-shadow: 0 0 0.4em #1f1e1c;">
+                © 2022 Quckixy Dev
+            </h3>
+        </footer>
+        <script>
+            fetch('https://api.github.com/repos/Quckixy/Nami-Releases/releases/latest')
+            .then(response => {
+            return response.json();
+            })
+            .then(user => {
+              console.log(user)
+              document.getElementById('download').href = user.assets[0].browser_download_url;
+            }).catch(e => console.log(e))
+      </script>
+      <script>
+        AOS.init();
+        MicroModal.init();
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute("href")).scrollIntoView({
+                    behavior: "smooth"
+                });
+            });
+        });
+        function updateViews(response) {
+            document.getElementById("views").innerHTML = `<i class="fas fa-eye"></i> ${response.value}`;
+        }
+        </script>
+        <script async src="https://api.countapi.xyz/hit/quckixy.xyz/visits?callback=updateViews"></script>
+    </body>
+</html>
